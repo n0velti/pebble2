@@ -2,7 +2,7 @@
 <manifest>
   
     <remote name="flint"
-            fetch="git://github.com/eanuichi/" 
+            fetch=".." 
             revision="main"
             />
   
@@ -790,8 +790,6 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
-
-  <project path="flint/test" name="test" remote="github" />
 
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
