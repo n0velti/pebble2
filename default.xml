@@ -3,7 +3,7 @@
   
     <remote name="flint"
             fetch=".." 
-            revision="refs/tags/main"
+            revision="main"
             />
   
     <remote  name="aosp"
