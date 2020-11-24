@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-   <remote  name="aosp"
+   <remote  name="github"
            fetch=".."
-           review="https://android-review.googlesource.com/" />
+             />
 
-  <remote  name="flint"
-           fetch="git://github.com/eanuichi/" 
-           revision="main"
-           />
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
 
-  <default revision="refs/tags/android-10.0.0_r41"
-           remote="aosp"
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com"
+           revision="refs/tags/android-10.0.0_r41" />
+
+  <default revision="refs/heads/main"
+           remote="github"
+           sync-c="true"
            sync-j="4" />
+  
 
   <project path="build/make" name="platform/build" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
@@ -790,7 +795,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
-  <project path="flint/test" name="test" remote="flint" />
+  <project path="flint/test" name="test" remote="github" />
 
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
