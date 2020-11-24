@@ -2,7 +2,7 @@
 <manifest>
   
     <remote name="flint"
-            fetch=".." 
+            fetch="git://github.com/eanuichi/" 
             revision="main"
             />
   
