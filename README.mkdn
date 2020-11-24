@@ -1,0 +1,16 @@
+flintOS
+===========
+
+Getting started
+---------------
+
+To initialize your local repository using the LineageOS trees, use a command like this:
+```
+repo init -u git://github.com/eanuichi/flint -b main
+```
+Then to sync up:
+```
+repo sync
+```
+
+
