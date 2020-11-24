@@ -7,8 +7,8 @@
             />
   
     <remote  name="aosp"
-           fetch="https://android.googlesource.com/platform/manifest"
-           review="https://android-review.googlesource.com/" />
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
 
     <default revision="refs/tags/android-10.0.0_r41"
             remote="aosp"
