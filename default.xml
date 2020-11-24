@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  
+   <remote  name="aosp"
+           fetch=".."
+           review="https://android-review.googlesource.com/" />
 
   <remote  name="flint"
            fetch="git://github.com/eanuichi/" 
            revision="main"
            />
-
-  <remote  name="aosp"
-           fetch=".."
-           review="https://android-review.googlesource.com/" />
 
   <default revision="refs/tags/android-10.0.0_r41"
            remote="aosp"
