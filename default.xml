@@ -6,6 +6,11 @@
             revision="main"
             />
   
+    <remote name="device_flint"
+        fetch="../device_flint"
+        revision="main"
+        />
+
     <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
@@ -791,6 +796,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
+  <project path="device/pebble/flint" name="device_flint" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
