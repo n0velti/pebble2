@@ -7,7 +7,7 @@
             />
   
     <remote name="device_flint"
-        fetch="https://github.com/eanuichi/"
+        fetch=".."
         revision="main"
         />
 
