@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   
-    <remote name="flint"
+    <remote name="github"
             fetch=".." 
-            revision="main"
             />
   
-    <remote name="github"
-        fetch="https://github.com/eanuichi/"
+    <remote name="dev_flint"
+        fetch=".."
+        revision= "main"
         />
 
     <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com" />
+           review="refs/tags/android-10.0.0_r41" />
 
-    <default revision="refs/tags/android-10.0.0_r41"
-            remote="aosp"
+    <default revision="main"
+            remote="github"
             sync-j="4" />
    
 
@@ -795,7 +795,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
-  <project path="device/pebble/flint" name="device_flint" remote="github"/>
+  <project path="device/pebble/flint" name="device_flint" remote="dev_flint"/>
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
