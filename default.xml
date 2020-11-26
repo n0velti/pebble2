@@ -12,10 +12,10 @@
 
     <remote  name="aosp"
            fetch="https://android.googlesource.com"
-           review="refs/tags/android-10.0.0_r41" />
+           />
 
-    <default revision="main"
-            remote="github"
+    <default revision="refs/tags/android-10.0.0_r41" 
+            remote="aosp"
             sync-j="4" />
    
 
@@ -795,7 +795,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
-  <project path="device/pebble/flint" name="device_flint" remote="dev_flint"/>
+  <project path="device/pebble/flint" name="eanuichi/device_flint" remote="dev_flint"/>
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
