@@ -6,7 +6,7 @@ Getting started
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init -u https://github.com/eanuichi/flint.git -b main
+repo init -u https://github.com/eanuichi/flint.git -b master
 ```
 Then to sync up:
 ```
