@@ -790,7 +790,7 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
-  <project path="device/pebble/flint" name="n0velti/device_flint_x86_64" remote="n0v" revision="master"/>
+  <project path="device/pebble/flint" name="n0velti/device_flint_x86_64" remote="github" revision="master"/>
 
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
