@@ -6,7 +6,7 @@ Getting started
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
-repo init -u https://github.com/n0velti/pebble.git -b master
+repo init -u https://github.com/n0velti/pebbleV1.git -b master
 ```
 Then to sync up:
 ```
